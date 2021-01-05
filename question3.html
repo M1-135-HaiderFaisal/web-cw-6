@@ -31,7 +31,7 @@
         </select>
       </div>
       <div class="center">
-        <button onclick="">احسب</button>
+        <button onclick="check()">احسب</button>
       </div>
       <div class="center">
         <h3 id="newAmount">0</h3>
@@ -62,8 +62,23 @@
           USA        amount * 3.27
           England    amount * 2.52
           UAE        amount * 12.01
+    
           Turkey     amount * 24.68
         */
+       function check(){
+         if(country== `USA`){
+           newAmount = amount*3.27
+           document.getElementById(`newAmount`). innerText= newAmount
+         }else if (country == `England`){
+           newAmount = amount*2.52
+           document.getElementById(`newAmout`).innerText=newAmount
+         }else if(country==`UAE`){
+           newAmount =amount*12.01
+           document.getElementById(`newAout`).innerText=newAmount
+          }else (country==`Turkey`){
+           newAmount =amount*24.68
+           document.getElementById(`newAout`).innerText=newAmount
+      
       }
     </script>
   </body>

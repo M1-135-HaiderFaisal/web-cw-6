@@ -19,9 +19,22 @@
       />
     </div>
     <div class="center">
-      <button onclick="">اختبر 🤓</button>
+      <button onclick="check()">اختبر 🤓</button>
     </div>
     <script>
+
+
+function check(){
+  let num =document.getElementById(`height`).value
+
+
+  if((num %2)==0){
+    document.getElementById(`numberType`).innerHTML=
+    num + "even number";
+  }else{
+    document.getElementById(`numberType`).innerHTML=
+    num + "odd number";}
+}
       // قم بإنشاء الدالة هنا
       // numberType << idقم بإظهار النتيجة النهائية باستخدام ال
       // لا تنسى مناداة الدالة عند الضغط على الزر
